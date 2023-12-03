@@ -19,7 +19,7 @@ export default function Home() {
     <NewSkills/>
     <MyAchievements/>
     <Contact/>
-    <Footer/>
+    
     </div>
   )
 }
