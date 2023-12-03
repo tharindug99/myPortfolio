@@ -55,7 +55,7 @@ export default function VolunteerExperience() {
       backgroundPosition: 'right',
       backgroundRepeat: 'no-repeat',}}>
   <div className="mx-auto w-4/5">
-      <VerticalTimeline lineColor='#32a4a8' className="m-10 ml-10 justify-center">
+      <VerticalTimeline lineColor='#32a4a8' className="ml-33 justify-center">
       {experienceData.map((experience, index) => (
         <VerticalTimelineElement
           key={index}
