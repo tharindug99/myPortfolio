@@ -61,9 +61,9 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden flex flex-col mt-4 mr-1 ">
             <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}"  to="/" >Home</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/About">About</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/Projects">My Projects</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/Contact">Contact Me</Link>
+            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/About">About</Link>
+            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/Projects">My Projects</Link>
+            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/Contact">Contact Me</Link>
           </div>
         )}
         {/* Desktop Menu (Left-aligned) */}
@@ -73,13 +73,13 @@ const Navbar = () => {
               <Link spy={true} smooth={true} to="/">Home</Link>
             </li>
             <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/About">About</Link>
+              <Link spy={true} smooth={true} to="/myPortfolio/About">About</Link>
             </li>
             <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/Projects">My Projects</Link>
+              <Link spy={true} smooth={true} to="/myPortfolio/Projects">My Projects</Link>
             </li>
             <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/Contact">Contact Me</Link>
+              <Link spy={true} smooth={true} to="/myPortfolio/Contact">Contact Me</Link>
             </li>
           </ul>
         </div>
