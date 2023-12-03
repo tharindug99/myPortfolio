@@ -20,7 +20,7 @@ export default function Banner() {
           
 
                 {/* ____________________WELCOME TEXT  ____________________________*/}
-                <div class="flex w-100 xl:pb-10 pl-5 py-30 my-20 lg:gap-6 items-center">
+                <div class="flex w-100 xl:pb-10 pl-5 py-30 my-20 mb-30 lg:gap-6 items-center">
                   <h1 className="text-3xl lg:text-5xl md:text-3xl font-semibold mb-4 lg:leading-normal text-white">
                       I'm <span className="text from-white via-cyan-300 to-cyan-500 bg-gradient-to-r bg-clip-text text-transparent">
                       Tharindu Godage</span>
@@ -35,26 +35,26 @@ export default function Banner() {
 
 {/* ____________________Icons for socials  ____________________________*/}
 
-<div data-aos="fade-up" data-aos-duration="1000" class=" w-full flex justify-center flex-col items-center">
+<div data-aos="fade-up" data-aos-duration="1000" class=" w-full flex justify-center flex-col items-center py-20">
   <h2 class="text-3xl text-center mb-4 text-white py-10 my-6">Connect with Me Through..</h2>
   <div class="flex space-x-6">
-    <a href="" class="text-white hover:text-white glow">
+    <a href="https://github.com/tharindug99" target="_blank" class="text-white hover:text-white glow">
       <AiFillGithub class="text-[64px]"></AiFillGithub>
     </a>
 
-    <a href="" class="text-white hover:text-white glow">
+    <a href="https://www.facebook.com/tharindu.godage/" target="_blank" class="text-white  hover:text-white glow">
       <AiFillFacebook class="text-[64px]"></AiFillFacebook>
     </a>
 
-    <a href="" class="text-white hover:text-white glow">
+    <a href="https://www.instagram.com/imperius_dominicus/" target="_blank" class="text-white hover:text-white glow">
       <AiFillInstagram class="text-[64px]"></AiFillInstagram>
     </a>
 
-    <a href="" class="text-white hover:text-white glow">
+    <a href="https://www.linkedin.com/in/tharindu-godage-489335156/" target="_blank" class="text-white hover:text-white glow">
       <AiOutlineLinkedin class="text-[64px]"></AiOutlineLinkedin>
     </a>
 
-    <a href="" class="text-white hover:text-white glow">
+    <a href="" target="_blank" class="text-white hover:text-white glow">
       <AiOutlineWhatsApp class="text-[64px]"></AiOutlineWhatsApp>
     </a>
   </div>
