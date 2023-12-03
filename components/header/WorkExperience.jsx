@@ -1,14 +1,28 @@
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import heroimg from '../images/Tharindu.jpg';
 import { AiOutlineBank } from "react-icons/ai";
 import { FaChalkboardTeacher } from "react-icons/fa";
 
+import heroimg from '../images/Tharindu.jpg';
 
+const experienceData = [
+  {
+    organization: 'Nations Trust Bank',
+    date: '2019 Dec - 2021 Jan',
+    role: 'Trainee Banking Assistant',
+    icon: <AiOutlineBank />,
+  },
+  {
+    organization: 'Third Space Global',
+    date: '2023 Sep - Present',
+    role: 'Online Mathematics Tutor',
+    icon: <FaChalkboardTeacher />,
+  },
+  // Add more experiences as needed
+];
 
 const WorkExperience = () => {
-  
   return (
     <div
       className="bg-fixed relative"
@@ -21,33 +35,25 @@ const WorkExperience = () => {
       }}
     >
       <VerticalTimeline lineColor='#32a4a8' className="m-10">
-        <VerticalTimelineElement className='vertical-timeline-element--work'
-                                 iconStyle={{backgroundColor:'#3294a8', color:'#fff'}}
-                                 icon={<AiOutlineBank />}
-                                //  date='2019-2021'
-                                 >
-                                 <h3>Nations Trust Bank <br />
-                                 <i>(2019 Dec - 2021 Jan)</i></h3>
-                                 <p>Trainee Banking Assistant</p>
-                                 <button 
-                                 className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">See more</button>
-
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement className='vertical-timeline-element--work'
-                                 iconStyle={{backgroundColor:'#3294a8', color:'#fff'}}
-                                 icon={<FaChalkboardTeacher />}
-                                //  date='2023-Present'
-                                >
-                                 <h3>Third Space Global <br />
-                                 <i>(2023 Sep - Present)</i></h3>
-                                 <p>Online Mathematics Tutor</p>
-                                 <button 
-                                 className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">See more</button>
-
-        </VerticalTimelineElement>
+        {experienceData.map((experience, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className='vertical-timeline-element--work'
+            iconStyle={{ backgroundColor: '#3294a8', color: '#fff' }}
+            icon={experience.icon}
+          >
+            <h3>{experience.organization} <br />
+              <i>({experience.date})</i>
+            </h3>
+            <p>{experience.role}</p>
+            <button
+              className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800"
+            >
+              See more
+            </button>
+          </VerticalTimelineElement>
+        ))}
       </VerticalTimeline>
-      
     </div>
   );
 };
