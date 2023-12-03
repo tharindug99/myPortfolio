@@ -34,7 +34,7 @@ const WorkExperience = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <VerticalTimeline lineColor='#32a4a8' className="m-10">
+      <VerticalTimeline lineColor='#32a4a8' className="m-10 ml-10 justify-center">
         {experienceData.map((experience, index) => (
           <VerticalTimelineElement
             key={index}
