@@ -16,9 +16,9 @@ const About = () => {
     <div className="m-0">
       
       <div className="bg-slate-600 bg-opacity-100 w-full h-20">
-        <div className="block-tabs grid md:grid-cols-2 sm:grid-cols-2">
+        <div className="block-tabs grid md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2">
           <div
-            className={`tabs flex flex-col items-center justify-center px-5 pt-7 pb-7 cursor-pointer ${
+            className={`tabs flex flex-col items-center justify-center px-5 pt-7 pb-7 mb-0 cursor-pointer ${
               activeTab === 'work'
                 ? 'text-black bg-white'
                 : 'text-blue-50 hover:bg-white hover:text-black'

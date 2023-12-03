@@ -24,6 +24,24 @@ const experienceData = [
     role: 'Director of PR / Operations',
     icon: <MdOutlineVolunteerActivism />,
   },
+  {
+    organization: 'Zero Plastic Community of Sabaragamuwa University of Sri Lanka',
+    date: '2022 March - 2022 December / 2022 December - 2023 August',
+    role: 'Director of PR / Operations',
+    icon: <MdOutlineVolunteerActivism />,
+  },
+  {
+    organization: 'Zero Plastic Community of Sabaragamuwa University of Sri Lanka',
+    date: '2022 March - 2022 December / 2022 December - 2023 August',
+    role: 'Director of PR / Operations',
+    icon: <MdOutlineVolunteerActivism />,
+  },
+  {
+    organization: 'Zero Plastic Community of Sabaragamuwa University of Sri Lanka',
+    date: '2022 March - 2022 December / 2022 December - 2023 August',
+    role: 'Director of PR / Operations',
+    icon: <MdOutlineVolunteerActivism />,
+  },
   // Add more experiences as needed
 ];
 
@@ -31,27 +49,30 @@ const experienceData = [
 export default function VolunteerExperience() {
   return (
     <div className="bg-fixed relative" style={{
-            paddingTop: 0,
-            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'right',
-            backgroundRepeat: 'no-repeat',}}>
-          <VerticalTimeline lineColor='#32a4a8' className="m-10">
-            {experienceData.map((experience, index) => (
-              <VerticalTimelineElement
-                key={index}
-                className='vertical-timeline-element--work'
-                iconStyle={{ backgroundColor: '#3294a8', color: '#fff' }}
-                icon={experience.icon}
-              >
-                <h3>{experience.organization} <br /><i>({experience.date})</i></h3>
-                <p>{experience.role}</p>
-                <button className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
-                  See more
-                </button>
-              </VerticalTimelineElement>
-            ))}
-          </VerticalTimeline>
-        </div>
+      paddingTop: 0,
+      backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'right',
+      backgroundRepeat: 'no-repeat',}}>
+  <div className="mx-auto w-4/5">
+      <VerticalTimeline lineColor='#32a4a8' className="m-10 ml-8 justify-normal">
+      {experienceData.map((experience, index) => (
+        <VerticalTimelineElement
+          key={index}
+          className='vertical-timeline-element--work mx-auto'
+          iconStyle={{ backgroundColor: '#3294a8', color: '#fff' }}
+          icon={experience.icon}
+        >
+          <h3>{experience.organization} <br /><i>({experience.date})</i></h3>
+          <p>{experience.role}</p>
+          <button className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
+           See more
+          </button>
+        </VerticalTimelineElement>
+      ))}
+    </VerticalTimeline>
+  </div>
+</div>
+        
   );
 }
