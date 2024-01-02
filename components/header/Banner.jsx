@@ -54,7 +54,7 @@ export default function Banner() {
       <AiOutlineLinkedin class="text-[64px]"></AiOutlineLinkedin>
     </a>
 
-    <a href="" target="_blank" class="text-white hover:text-white glow">
+    <a href="https://wa.me/+94715482499" target="_blank" class="text-white hover:text-white glow">
       <AiOutlineWhatsApp class="text-[64px]"></AiOutlineWhatsApp>
     </a>
   </div>

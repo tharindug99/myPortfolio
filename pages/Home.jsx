@@ -5,6 +5,7 @@ import NewSkills from '../components/header/NewSkills'
 import Contact from './Contact'
 import heroimg from '../components/images/Tharindu.jpg'
 import Footer from '../components/footer'
+import MySkills from '../components/skills/MySkills'
 
 export default function Home() {
   return (

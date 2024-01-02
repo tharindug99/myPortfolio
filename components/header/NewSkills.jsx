@@ -1,4 +1,7 @@
 import React from 'react'
+import Projects from '../../pages/Projects'
+import { Link } from 'react-router-dom'
+import MySkills from '../../components/skills/MySkills'
 
 export default function NewSkills() {
 
@@ -17,7 +20,7 @@ export default function NewSkills() {
         <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl mr-0 text-center text-white py-10">View my work on..</h2>
 
             <div className="grid md:grid-cols-4 sm:grid-cols-2 sm:px-10 py-10">
-                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg items-center">
                     <div class="flex flex-col py-10 bg-slate-50 p-5 rounded-t-lg"></div>
 
                     <div className="auto mx-3">
@@ -28,12 +31,14 @@ export default function NewSkills() {
                         <h3>FrontEnd Development</h3>
                     </div>
                     
-                    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 px-2 rounded mx-5">
+                    <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}
+                        <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 w-full px-8 rounded ">
                             See More...
-                    </button>
+                        </button>
+                    </Link>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg items-center">
                     <div class="flex flex-col py-10 bg-slate-50 p-5 rounded-t-lg"></div>
 
                     <div className="auto mx-3">
@@ -44,12 +49,14 @@ export default function NewSkills() {
                         <h3>BackEnd Development</h3>
                     </div>
                     
-                    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 px-2 rounded mx-5">
+                    <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}
+                        <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 w-full px-8 rounded ">
                             See More...
-                    </button>
+                        </button>
+                    </Link>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg items-center">
                     <div class="flex flex-col py-10 bg-slate-50 p-5 rounded-t-lg"></div>
 
                     <div className="auto mx-3">
@@ -60,12 +67,14 @@ export default function NewSkills() {
                         <h3>Mobile App Development</h3>
                     </div>
                     
-                    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 px-2 rounded mx-5">
+                    <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}
+                        <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 w-full px-8 rounded ">
                             See More...
-                    </button>
+                        </button>
+                    </Link>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000" className="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="1000" className="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg items-center">
                     <div class="flex flex-col py-10 bg-slate-50 p-5 rounded-t-lg"></div>
 
                     <div className="auto mx-3">
@@ -76,13 +85,15 @@ export default function NewSkills() {
                         <h3>FullStack Development</h3>
                     </div>
                     
-                    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 px-2 rounded mx-5">
+                    <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}
+                        <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 mt-2 mb-4 w-full px-8 rounded ">
                             See More...
-                    </button>
+                        </button>
+                    </Link>
                 </div>
 
             </div>
-
+            <MySkills/>
             
         </div>
         
