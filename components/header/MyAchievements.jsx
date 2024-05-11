@@ -22,10 +22,12 @@ const MyAchievements = () => {
 
     return (
         <div>
-            <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl text-center mb-4 text-white py-20">
+            <h2 data-aos="fade-up" 
+                data-aos-duration="1000" 
+                className="text-3xl text-center mb-4 text-white py-20 ">
                 Some of My Achievements...
             </h2>
-            <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div className="max-w-[1400px] mx-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

@@ -26,7 +26,6 @@ export default function WorkExperience () {
   return (
     <div className="bg-fixed relative" style={{
       paddingTop: 0,
-      backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'right',
       backgroundRepeat: 'no-repeat',}}>
