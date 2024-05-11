@@ -53,7 +53,7 @@ const About = () => {
       )}
     </div>
 
-    <Footer/>
+    
     </>
   );
 };

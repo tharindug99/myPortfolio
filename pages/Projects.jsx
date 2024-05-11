@@ -100,7 +100,7 @@ export default function Projects() {
       )}
 
 
-      <Footer/>
+      
     </>
   );
 }

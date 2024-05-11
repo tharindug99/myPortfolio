@@ -1,5 +1,5 @@
 import React from 'react';
-import htmlIcon from '../../src/assets/icons/html.png'; // Adjust the path based on your project structure
+import htmlIcon from '../../src/assets/icons/html.png'; 
 
 const Frontend = () => {
   const frameworks = [

@@ -43,12 +43,13 @@ const Navbar = () => {
       backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'transparent',
       transition: 'background-color 0.3s ease-in-out'
     }}>
-      <div className="h-10vh flex flex-col lg:flex-row justify-between z-50 text-cyan-900 lg:py-5 px-20 py-4">
+      <div className="h-10vh flex flex-col 
+      lg:flex-row lg:py-5 justify-between z-50 bg-slate-300 text-cyan-900  px-20 py-4">
         <div className="flex items-center">
           <span className="text-3xl font-bold px--4">TNG</span>
-          <div className="lg:hidden flex items-center justify-end font-normal">
+          <div className="lg:hidden md:hidden flex items-center justify-end font-normal">
           <button
-            className="text-2xl px-40"
+            className="text-2xl pl-24"
             onClick={toggleMobileMenu}
           >
             &#9776; {/* Hamburger Icon */}
@@ -59,7 +60,7 @@ const Navbar = () => {
         
         {/* Mobile Menu (Right-aligned) */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden flex flex-col mt-4 mr-1 ">
+          <div className="lg:hidden flex flex-col mt-4 ">
             <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}"  to="/" >Home</Link>
             <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/About">About</Link>
             <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/Projects">My Projects</Link>

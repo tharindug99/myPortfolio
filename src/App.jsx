@@ -9,17 +9,15 @@ import Navbar from '../components/header/Navbar'
 const App = () => {
 
   return (
-    <>
+    <div className='bg-orange-500 '>
     <Navbar/>
      <Routes>
         <Route path="/myPortfolio" element={ <Home/> } />
         <Route path="/" element={ <Home/> } />
-        <Route path="/myPortfolio/about" element={ <About/> } />
-        <Route path="/myPortfolio/contact" element={ <Contact/> } />
-        <Route path="/myPortfolio/projects"element={<Projects/>}/>
+        
       </Routes> 
      
-    </>
+    </div>
   )
 }
 

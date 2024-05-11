@@ -37,14 +37,22 @@ const MyAchievements = () => {
 
     return (
     <div className="">
-        <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl text-center mb-4 text-white py-20">
+        <h2 data-aos="fade-up" 
+            data-aos-duration="1000" 
+            className="text-3xl text-center mb-4 text-white py-20">
             Some of My Achievements...
         </h2>
-        <div className="max-w-[1400px] h-[780px] lg:w-1/2 sm:w-100 md:w-100 m-auto py-16 px-4 relative">
+        <div className="max-w-[1400px] h-[780px] 
+        lg:w-1/2 
+        sm:w-full 
+        md:w-full m-auto py-16 px-4 relative">
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                 data-aos="fade-left" data-aos-duration="1000"
-                className="w-full h-full rounded-2xl bg-center bg-cover duration-500 hover:cursor-pointer relative"
+                className="w-full h-1/2 rounded-2xl bg-center bg-cover duration-500 hover:cursor-pointer relative
+                           lg:h-full 
+                           md:h-5/6
+                           sm:h-full"
             >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent hover:opacity-100 opacity-0 transition-opacity duration-300">
                     <h3 className="text-white text-xl absolute bottom-4 left-4">{slides[currentIndex].title}</h3>
