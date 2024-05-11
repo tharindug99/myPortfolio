@@ -6,7 +6,7 @@ import heroimg from '../images/Tharindu.jpg';
 export default function Banner() {
 
   return (
-    <div className="mx-auto max-w-full bg-fixed relative align-center py-30"
+    <div className="mx-auto max-w-full bg-fixed relative align-center py-30 z-30"
       style={{
         backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
         backgroundSize: 'cover',

@@ -97,7 +97,7 @@ export default function Home() {
                   value: 0.5,
                 },
                 shape: {
-                  type: "heart",
+                  type: "nested",
                 },
                 size: {
                   value: { min: 1, max: 5 },
