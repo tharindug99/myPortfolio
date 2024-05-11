@@ -6,11 +6,12 @@ import Contact from './Contact';
 import heroimg from '../components/images/Tharindu.jpg';
 import About from './About';
 import Footer from '../components/footer';
-import MySkills from '../components/skills/MySkills';
+
 
 export default function Home() {
   return (
-    <div className=" lg:w-full bg-fixed relative align-center">
+    <div id="home"
+         className=" lg:w-full bg-fixed relative align-center">
       <div
         style={{
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
@@ -26,6 +27,7 @@ export default function Home() {
         <About/>
         <MyAchievements />
         <Contact />
+        <Footer/>
         
       </div>
       

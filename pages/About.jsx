@@ -13,7 +13,8 @@ const About = () => {
 
   return (
     <>
-    <div className="m-0">
+    <div id="about"
+         className="m-0">
       
       <div className="bg-slate-600 bg-opacity-100 w-full h-20">
         <div className="block-tabs grid md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2">

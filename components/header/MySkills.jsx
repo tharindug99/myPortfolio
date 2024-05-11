@@ -13,8 +13,10 @@ export default function MySkills() {
     <>
   
 
-  <h2 className="text-3xl mr-0 text-center text-white bg-cyan-900 pt-10 pb-10">View my work on..</h2>
-      <div style={{ marginRight: 0 }} className="grid md:grid-cols-4 sm:grid-cols-2 py-5 bg-cyan-900">
+  <h2  
+       className="text-3xl mr-0 text-center text-white bg-cyan-900 pt-10 pb-10">View my work on..</h2>
+      <div id="projects"
+            style={{ marginRight: 0 }} className="grid md:grid-cols-4 sm:grid-cols-2 py-5 bg-cyan-900">
 
         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg">
         {/* FrontEnd Development */}

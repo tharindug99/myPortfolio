@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import {AiOutlineArrowUp} from 'react-icons/ai';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,68 +29,64 @@ const Navbar = () => {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    scroll.scrollToTop({
+      duration: 800,
+      smooth: 'easeInOutQuad'
     });
   };
 
   return (
-    <nav style={{ 
-      position: 'sticky', 
-      top: 0, 
-      zIndex: 1000, 
+    <nav style={{
+      position: 'sticky',
+      top: 0,
+      zIndex: 1000,
       backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'transparent',
       transition: 'background-color 0.3s ease-in-out'
     }}>
-      <div className="h-10vh flex flex-col 
+      <div className="h-10vh flex flex-col
       lg:flex-row lg:py-5 justify-between z-50 bg-slate-300 text-cyan-900  px-20 py-4">
-        <div className="flex items-center">
-          <span className="text-3xl font-bold px--4">TNG</span>
-          <div className="lg:hidden md:hidden flex items-center justify-end font-normal">
+        {/* Mobile Menu Toggle Button (Right-aligned) */}
+        <div className="lg:hidden md:hidden flex items-center justify-end font-normal">
           <button
-            className="text-2xl pl-24"
+            className="text-2xl pr-4" // Adjusted padding
             onClick={toggleMobileMenu}
           >
             &#9776; {/* Hamburger Icon */}
           </button>
         </div>
-        </div>
-        {/* Mobile Menu Toggle Button (Right-aligned) */}
-        
         {/* Mobile Menu (Right-aligned) */}
         {isMobileMenuOpen && (
           <div className="lg:hidden flex flex-col mt-4 ">
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}"  to="/" >Home</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/About">About</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/Projects">My Projects</Link>
-            <Link className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointerspy={true} smooth={true}" to="/myPortfolio/Contact">Contact Me</Link>
+            <ScrollLink className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointer" to="home" spy={true} smooth={true} offset={-70}>Home</ScrollLink>
+            <ScrollLink className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointer" to="about" spy={true} smooth={true} offset={-70}>About</ScrollLink>
+            <ScrollLink className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointer" to="projects" spy={true} smooth={true} offset={-70}>My Projects</ScrollLink>
+            <ScrollLink className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-200 transition border-b2 cursor-pointer" to="contact" spy={true} smooth={true} offset={-70}>Contact Me</ScrollLink>
           </div>
         )}
         {/* Desktop Menu (Left-aligned) */}
         <div className="lg:flex md:flex hidden lg:justify-end">
           <ul className="lg:flex md:flex lg:space-x-4 md:space-x-4 lg:items-center">
-            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/">Home</Link>
+            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointer">
+              <ScrollLink to="home" spy={true} smooth={true} offset={-70}>Home</ScrollLink>
             </li>
-            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/myPortfolio/About">About</Link>
+            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointer">
+              <ScrollLink to="about" spy={true} smooth={true} offset={-70}>About</ScrollLink>
             </li>
-            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/myPortfolio/Projects">My Projects</Link>
+            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointer">
+              <ScrollLink to="projects" spy={true} smooth={true} offset={-70}>My Projects</ScrollLink>
             </li>
-            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointerspy={true} smooth={true}  ">
-              <Link spy={true} smooth={true} to="/myPortfolio/Contact">Contact Me</Link>
+            <li className="my-2 py-1 border-b-2 border-slate-800 hover:text-cyan-500 hover:border-cyan-500 transition border-b2 cursor-pointer">
+              <ScrollLink to="contact" spy={true} smooth={true} offset={-70}>Contact Me</ScrollLink>
             </li>
           </ul>
         </div>
         <button
-  className={`${
-    isScrolled ? 'block' : 'hidden'
-  } fixed bottom-4 right-4 bg-cyan-500 text-white py-2 px-4 rounded-full h-12 w-12 shadow-md`}
-  onClick={scrollToTop}
->
-          <AiOutlineArrowUp></AiOutlineArrowUp>
+          className={`${
+            isScrolled ? 'block' : 'hidden'
+          } fixed bottom-4 right-4 bg-cyan-500 text-white py-2 px-4 rounded-full h-12 w-12 shadow-md`}
+          onClick={scrollToTop}
+        >
+          <AiOutlineArrowUp />
         </button>
       </div>
     </nav>

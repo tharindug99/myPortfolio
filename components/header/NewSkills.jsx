@@ -13,11 +13,12 @@ export default function NewSkills() {
 
   return (
     <div>
-        <div className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-900/60 via-teal-600 to-emerald-900/60 "
+        <div id="projects" 
+        className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-900/60 via-teal-600 to-emerald-900/60 "
              style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), transparent), radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))`,
               }}>
-        <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl mr-0 text-center text-white py-10">View my work on..</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl mr-0 text-center text-white py-10">Some Of my Projects</h2>
 
             <div className="grid md:grid-cols-4 sm:grid-cols-2 sm:px-10 py-10">
                 <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col bg-slate-50 mx-5 my-3 rounded-lg items-center">
@@ -28,7 +29,7 @@ export default function NewSkills() {
                     </div>
 
                     <div className="text-center my-4">
-                        <h3>FrontEnd Development</h3>
+                        <h3>MediFlex</h3>
                     </div>
                     
                     <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}
@@ -46,7 +47,7 @@ export default function NewSkills() {
                     </div>
 
                     <div className="text-center my-4">
-                        <h3>BackEnd Development</h3>
+                        <h3>UniJobs</h3>
                     </div>
                     
                     <Link to="/myPortfolio/Projects"> {/* Use Link component from react-router-dom */}

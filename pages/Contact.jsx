@@ -4,7 +4,8 @@ import Footer from '../components/footer';
 export default function Contact() {
   return (
     <>
-      <div className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-900/60 via-teal-600 to-emerald-900/60 text-teal-500 min-h-screen flex items-center justify-center">
+      <div  id="contact"
+            className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-900/60 via-teal-600 to-emerald-900/60 text-teal-500 min-h-screen flex items-center justify-center">
         <div
           data-aos="fade-up"
           data-aos-duration="800"
