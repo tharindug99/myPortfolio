@@ -79,13 +79,13 @@ const Technologies = () => {
 
   return (
     <div className="container py-10 px-20 items-center">
-      <h2 className="text-3xl font-bold lg:mb-20 text-white text-center">Tools and Technologies I use..</h2>
+      <h2 className="text-3xl font-bold lg:mb-20 mb-12 text-white text-center">Tools and Technologies I use..</h2>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-8">
         {frameworks.map((framework) => (
           <div
             key={framework.name}
-            className="bg-white p-4 rounded-md shadow-md transition-transform transform hover:scale-105 text-center lg:w-[140px]"
+            className="bg-white p-4 mx-1 rounded-md shadow-md transition-transform transform hover:scale-105 text-center lg:w-[140px]"
           >
             <img
               src={framework.icon}
