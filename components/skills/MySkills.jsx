@@ -1,20 +1,14 @@
 import React from 'react';
-import Frontend from './Frontend';
-import BackendFrameworks from './BackendFrameworks';
-import UIUXTools from './UIUXTools';
+import Technologies from './Technologies';
 
 const MySkills = () => {
   return (
     <div>
       
       
-      <Frontend />
+      <Technologies />
       
-      <BackendFrameworks />
-      
-      <UIUXTools />
-      
-      
+    
     </div>
   );
 };
