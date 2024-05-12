@@ -1,11 +1,21 @@
 import React from 'react';
-import htmlIcon from '../../src/assets/icons/html.png'; 
+import vite from '../../src/assets/icons/vite.svg'; 
+import next from '../../src/assets/icons/nextjs.svg';
+import reactnative from '../../src/assets/icons/react-native.svg'
 
 const Technologies = () => {
   const frameworks = [
     {
       name: 'React',
       icon: 'https://cdn.iconscout.com/icon/free/png-512/react-4-1175110.png',
+    },
+    {
+      name: 'React-Native',
+      icon: reactnative,
+    },
+    {
+      name: 'NextJs',
+      icon: next,
     },
     {
       name: 'Html',
@@ -64,8 +74,8 @@ const Technologies = () => {
       icon: 'https://www.vectorlogo.zone/logos/trello/trello-icon.svg',
     },
     {
-      name: 'AI',
-      icon: 'https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg',
+      name: 'Vite',
+      icon: vite,
     },
     {
       name: 'Linux',
@@ -75,6 +85,8 @@ const Technologies = () => {
       name: 'GitHub',
       icon: 'https://www.vectorlogo.zone/logos/github/github-tile.svg',
     },
+    
+    
   ];
 
   return (

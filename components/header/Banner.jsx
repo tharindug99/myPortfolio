@@ -32,10 +32,10 @@ export default function Banner() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-full flex justify-center flex-col items-center py-20">
+          className="mb-20 w-full flex justify-center flex-col items-center py-20">
 
           <h2 className="text-3xl text-center mb-4 text-white py-10 my-6">Connect with Me Through..</h2>
-          <div className="flex flex-wrap justify-center space-x-6 sm:space-x-10 lg:space-x-16">
+          <div className="flex flex-wrap justify-center space-x-6 sm:space-x-10 lg:space-x-16 gap-y-8">
             <SocialIcon link="https://github.com/tharindug99" icon={<AiFillGithub className="text-[64px]" />} />
             <SocialIcon link="https://www.facebook.com/tharindu.godage/" icon={<AiFillFacebook className="text-[64px]" />} />
             <SocialIcon link="https://www.instagram.com/imperius_dominicus/" icon={<AiFillInstagram className="text-[64px]" />} />
