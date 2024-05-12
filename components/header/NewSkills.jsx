@@ -4,7 +4,7 @@ import MySkills from '../../components/skills/MySkills';
 import Mediflex from      '../../src/assets/images/MediFlex.png';
 import weatherfinder from '../../src/assets/images/weatherfinder.png'
 import UniJobs from '../../src/assets/images/UniJobs.png'
-import surasa from '../../src/assets/images/Surasa.png'
+import surasa from '../../src/assets/images/surasa.png'
 import dashboard from '../../src/assets/images/nextJs-Dashboard.png'
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
