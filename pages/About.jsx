@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       <div id="about" 
-           className="m-0 flex flex-col sm:flex-row">
+           className="m-0 flex flex-col sm:flex-row z-100">
         {/* Render tabs in the right-hand corner */}
         <div className="flex-none bg-transparent px-4 py-2  
         w-full sm:w-1/4 h-auto sm:h-full flex justify-center items-center">

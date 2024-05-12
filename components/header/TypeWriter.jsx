@@ -4,12 +4,11 @@ import { Typewriter } from 'react-simple-typewriter';
 const TypeWriter = () => {
 
   const handleType = (count) => {
-    // Access the word count number
-    console.log(count);
+    
   };
 
   const handleDone = () => {
-    console.log(`Done after 5 loops!`);
+    
   };
 
   return (
@@ -17,7 +16,7 @@ const TypeWriter = () => {
       <h1>
         a {' '}
         <span style={{ color: 'cyan', fontWeight: 'bold' }}>
-          {/* Style will be inherited from the parent element */}
+          
           <Typewriter
             words={['Front-End Developer', 'Back-End Developer','Full-Stack Developer','Mobile App Developer']}
             loop={5000}
