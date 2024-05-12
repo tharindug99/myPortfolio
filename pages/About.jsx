@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       <div id="about" 
-           className="m-0 flex flex-col sm:flex-row z-100">
+           className="m-0 mt-20 flex flex-col sm:flex-row z-100">
         {/* Render tabs in the right-hand corner */}
         <div className="flex-none bg-transparent px-4 py-2  
         w-full sm:w-1/4 h-auto sm:h-full flex justify-center items-center">
@@ -41,9 +41,9 @@ const About = () => {
           </div>
         </div>
 
-        {/* Render corresponding content in the left */}
+        
         <div className="flex-grow">
-          {/* Corresponding content for each tab */}
+          
           {activeTab === 'work' && (
             <div>
               <WorkExperience />

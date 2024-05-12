@@ -40,7 +40,7 @@ export default function WorkExperience () {
         >
           <h3>{experience.organization} <br /><i>({experience.date})</i></h3>
           <p>{experience.role}</p>
-          <button className="rounded bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
+          <button className=" bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
            See more
           </button>
         </VerticalTimelineElement>
