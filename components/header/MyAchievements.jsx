@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from '../images/Achievments/RevolUX.jpg';
 import img2 from '../images/Achievments/UXPlore.jpg';
 import img3 from '../images/Achievments/Innova.jpg';
+import img4 from '../images/Achievments/ICS.jpg';
 
 const MyAchievements = () => {
 
@@ -17,6 +18,10 @@ const MyAchievements = () => {
         {
             url: img3,
             title: "Innova 2023 Champions IT Category"
+        },
+        {
+            url: img4,
+            title: "Most Popular Team ICS 2021"
         }
     ];
 

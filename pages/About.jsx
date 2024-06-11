@@ -17,7 +17,7 @@ const About = () => {
         {/* Render tabs in the right-hand corner */}
         <div className="flex-none bg-transparent px-4 py-2  
         w-full sm:w-1/4 h-auto sm:h-full flex justify-center items-center">
-          <div className="block-tabs flex flex-col">
+          <div className="block-tabs flex flex-col gap-y-2">
             <div
               className={`tabs text-center py-3 cursor-pointer rounded-lg ${
                 activeTab === 'work'
@@ -31,8 +31,8 @@ const About = () => {
             <div
               className={`tabs text-center py-3 cursor-pointer rounded-lg ${
                 activeTab === 'volunteer'
-                  ? 'text-black bg-white rounded-lg px-4 py-2'
-                  : 'text-blue-50 hover:bg-white hover:text-black'
+                  ? 'text-black bg-white rounded-lg px-8 py-2'
+                  : 'text-blue-50 hover:bg-white hover:text-black rounded-lg'
               }`}
               onClick={() => handleTabClick('volunteer')}
             >
