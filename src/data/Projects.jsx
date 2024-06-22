@@ -5,7 +5,7 @@ import UniJobs from '../assets/images/Projects/UniJobs.png'
 import surasa from '../assets/images/Projects/surasa.png'
 import dashboard from '../assets/images/Projects/nextJs-Dashboard.png'
 import chatbot from '../assets/images/Projects/chat with gemini.png'
-
+import sampleTemplate from '../assets/images/Projects/sample-template.png'
 
 
 
@@ -52,6 +52,13 @@ const projects = [
         imgSrc: chatbot,
         technologies: ["NextJs","Tailwind CSS"],
         repoLink: "https://github.com/tharindug99/MediFlex_frontEnd"
+      },
+      {
+        title: "Next sample template",
+        description: "A basic template with a header and footer, with App navigation",
+        imgSrc: sampleTemplate,
+        technologies: ["NextJs","Tailwind CSS"],
+        repoLink: "https://github.com/tharindug99/NextJs-template"
       },
     
   ];

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div id="home" className="lg:w-full bg-fixed relative align-center">
       <div
-        className="mx-auto max-w-full bg-fixed relative align-center py-30 z-30"
+        className="mx-auto lg:max-w-full bg-fixed relative align-center py-30 z-30"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url(${heroimg})`,
           backgroundSize: 'cover',
