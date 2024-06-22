@@ -14,6 +14,13 @@ const experienceData = [
     image: heroimg
   },
   {
+    organization: 'AIESEC in Sabaragamuwa',
+    date: '2021 Dec - 2022 Aug',
+    role: 'Partnership Development Committee Member | Qualifier 1.0',
+    icon: <MdOutlineVolunteerActivism />,
+    image: heroimg
+  },
+  {
     organization: 'SLSAC',
     date: '2022 March - 2023 March',
     role: 'Delegates Management Team Member',
@@ -69,9 +76,12 @@ export default function VolunteerExperience() {
           icon={experience.icon}
           image={experience.image}
         >
-          <h3>{experience.organization} <br /><i>({experience.date})</i></h3>
+          {experience.organization} 
+          <img src={experience.image} 
+               style={{ maxWidth: '100px', marginLeft: '10px' }} />
+          <br />
+          <i>({experience.date})</i>
           <p>{experience.role}</p>
-          <img src={experience.image} alt="" />
           <button className=" bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
            See more
           </button>

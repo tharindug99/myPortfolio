@@ -3,8 +3,9 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { AiOutlineBank } from "react-icons/ai";
 import { FaChalkboardTeacher } from "react-icons/fa";
+import logoNTB from '../../src/assets/images/WorkLogos/NTB.jpg' 
+import logoTSG from '../../src/assets/images/WorkLogos/tsg.png' 
 
-import heroimg from '../images/Tharindu.jpg';
 
 const experienceData = [
   {
@@ -12,16 +13,16 @@ const experienceData = [
     date: '2019 Dec - 2021 Jan',
     role: 'Trainee Banking Assistant',
     icon: <AiOutlineBank />,
-    image: heroimg
+    image: logoNTB
   },
   {
     organization: 'Third Space Global',
     date: '2023 Sep - Present',
     role: 'Online Mathematics Tutor',
     icon: <FaChalkboardTeacher />,
-    image: '' // Add your image source here
+    image: logoTSG
   },
-  // Add more experiences as needed
+  
 ];
 
 export default function WorkExperience() {
@@ -33,33 +34,34 @@ export default function WorkExperience() {
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="mx-auto w-4/5">
-        <VerticalTimeline lineColor='#32a4a8' className="ml-33 justify-center">
-          {experienceData.map((experience, index) => (
-            <VerticalTimelineElement
-              key={index}
-              className='vertical-timeline-element--work mx-auto'
-              iconStyle={{ backgroundColor: '#3294a8', color: '#fff' }}
-              icon={experience.icon}
-              image={experience.image}
-            >
-              <div className="d-flex align-items-center justify-content-between">
-                <div className="column">
-                  <h3>{experience.organization}</h3>
-                  <p><i>{experience.date}</i></p>
-                  <p>{experience.role}</p>
-                </div>
-
-                <div className="column"> 
-                   {experience.image && <img src={experience.image} alt="" style={{ maxWidth: '100px' }} />}
-                </div>
+  <VerticalTimeline lineColor='#32a4a8' className="ml-33 justify-center">
+    {experienceData.map((experience, index) => (
+      <VerticalTimelineElement
+        key={index}
+        className='vertical-timeline-element--work mx-auto'
+        iconStyle={{ backgroundColor: '#3294a8', color: '#fff' }}
+        icon={experience.icon}
+      >
+        <div className="d-flex align-items-center justify-content-between">
+            <div className="column">
+                  <div className="d-flex align-items-center">
+                    {experience.organization}
+                    <img 
+                        src={experience.image} 
+                        alt="" 
+                        style={{ maxWidth: '100px', marginLeft: '10px' }} 
+                    />
+                  
+                  </div>
+                <p><i>{experience.date}</i></p>
+                <p>{experience.role}</p>
               </div>
-              <button className=" bg-teal-500 p-2 mt-4 rounded-2xl text-white hover:bg-teal-800">
-                See more
-              </button>
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-      </div>
+           </div>
+          </VerticalTimelineElement>
+       ))}
+      </VerticalTimeline>
+    </div>
+
     </div>
   );
 };
