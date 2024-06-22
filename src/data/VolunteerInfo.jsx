@@ -68,18 +68,18 @@ const VolunteerInfo = [
     image: yp
   },
   {
-    organization: 'IEEEXtreme',
+    organization: '',
     date: 'Mar 2023 - Dec 2023',
-    role: 'Participant',
+    role: 'IEEEXtreme | Ambassador for SUSL',
     icon: <SiIeee size="2x" />,
     image: ieee_extreme
   },
   {
-    organization: 'IEEE Young Professionals Sri Lanka',
+    organization: '',
     date: 'Mar 2023 - Dec 2023',
-    role: 'Membership Coordinator',
+    role: 'IEEE Young Professionals Sri Lanka | Membership Coordinator',
     icon: <SiIeee size="2x" />,
-    image: ieee
+    image: yp
   }
 ];
 
