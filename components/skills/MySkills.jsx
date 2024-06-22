@@ -4,11 +4,7 @@ import Technologies from './Technologies';
 const MySkills = () => {
   return (
     <div>
-      
-      
       <Technologies />
-      
-    
     </div>
   );
 };

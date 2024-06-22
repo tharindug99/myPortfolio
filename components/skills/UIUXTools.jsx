@@ -7,8 +7,6 @@ const UIUXTools = () => {
       name: 'Figma',
       icon: figmaIcon,
     },
-    
-    // Add more UI/UX tools as needed
   ];
 
   return (
@@ -26,7 +24,6 @@ const UIUXTools = () => {
               alt={`${tool.name} Icon`}
               className="w-12 h-12 mx-auto"
             />
-            {/* <p className="text-center font-semibold">{tool.name}</p> */}
           </div>
         ))}
       </div>

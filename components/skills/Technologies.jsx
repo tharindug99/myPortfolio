@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import vite from '../../src/assets/icons/vite.svg'; 
 import next from '../../src/assets/icons/nextjs.svg';
-import reactnative from '../../src/assets/icons/react-native.svg'
+import reactnative from '../../src/assets/icons/react-native.svg';
 
 const Technologies = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
   const frameworks = [
     {
       name: 'React',
@@ -91,9 +100,14 @@ const Technologies = () => {
 
   return (
     <div className="container py-10 px-20 items-center">
-      <h2 className="text-3xl font-bold lg:mb-20 mb-12 text-white text-center">Tools and Technologies I use..</h2>
       
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-8">
+      <h2 data-aos="fade-up"
+          className="text-3xl font-bold lg:mb-20 mb-12 text-white text-center">
+        Tools and Technologies I use..
+      </h2>
+      <div 
+        data-aos="fade-up"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-8">
         {frameworks.map((framework) => (
           <div
             key={framework.name}
@@ -102,11 +116,8 @@ const Technologies = () => {
             <img
               src={framework.icon}
               alt={`${framework.name} Icon`}
-              className="lg:w-20 lg:h-20 
-                         md:w-20 md:h-20
-                         sm:w-18 sm:h-18    mx-auto mb-1"
+              className="lg:w-20 lg:h-20 md:w-20 md:h-20 sm:w-18 sm:h-18 mx-auto mb-1"
             />
-            {/* <p className="text-center font-semibold">{framework.name}</p> */}
           </div>
         ))}
       </div>
