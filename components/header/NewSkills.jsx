@@ -1,11 +1,7 @@
 import {React, useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import MySkills from '../../components/skills/MySkills';
-import Mediflex from      '../../src/assets/images/MediFlex.png';
-import weatherfinder from '../../src/assets/images/weatherfinder.png'
-import UniJobs from '../../src/assets/images/UniJobs.png'
-import surasa from '../../src/assets/images/surasa.png'
-import dashboard from '../../src/assets/images/nextJs-Dashboard.png'
+import projects from '../../src/data/Projects';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -26,44 +22,6 @@ export default function NewSkills() {
     console.log(container);
   };
 
-  const projects = [
-    {
-      title: "MediFlex",
-      description: "A web application for managing medical records.",
-      imgSrc: Mediflex,
-      technologies: ["React", "Node.js","Tailwind CSS", "Express.js", "MongoDB"],
-      repoLink: "https://github.com/tharindug99/MediFlex_frontEnd"
-    },
-    {
-      title: "UniJobs",
-      description: "A web application for managing medical records.",
-      imgSrc: UniJobs,
-      technologies: ["React-Native","FireBase","Expo","Figma"],
-      repoLink: "https://github.com/tharindug99/UniJobs-byAvishka"
-    },
-    {
-      title: "Weather Finder",
-      description: "A web application for managing medical records.",
-      imgSrc: weatherfinder,
-      technologies: ["React", "ViteJs","Tailwind CSS", "OpenWeather API"],
-      repoLink: "https://github.com/tharindug99/WeatherFinder"
-    },
-    {
-      title: "Surasa Website (Under Dev.)",
-      description: "The official website for Surasa..",
-      imgSrc: surasa,
-      technologies: ["React", "Tailwind CSS", "PHP", "MY SQL","Figma"],
-      repoLink: "https://github.com/tharindug99/Surasa"
-    },
-    {
-      title: "Next JS Dashboard",
-      description: "A basic dashboard which can be used to track income and expenses, profits, sales",
-      imgSrc: dashboard,
-      technologies: ["NextJS","POSTGRE SQL","Tailwind CSS"],
-      repoLink: "https://github.com/tharindug99/nextjs-dashboard"
-    },
-    
-  ];
 
   return (
     <div className="">
